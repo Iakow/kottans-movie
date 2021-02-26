@@ -84,10 +84,6 @@ nav {
   background-color: #3d2634;
 }
 
-.movie-info {
-  margin: auto;
-}
-
 .movie-date {
   display: block;
 
@@ -157,7 +153,7 @@ nav {
 
 .booking-form {
   width: 90%;
-  margin-bottom: 10vh;
+  /* margin-bottom: 10vh; */
 }
 
 .booking-form::before {
@@ -175,6 +171,16 @@ nav {
   border-top-right-radius: 34px;
   -webkit-animation: shine 1.5s infinite alternate;
   animation: shine 1.5s infinite alternate;
+}
+
+#purchased-tickets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .hall-view {
@@ -253,6 +259,7 @@ nav {
 }
 
 .btn-buy {
+  flex-shrink: 0;
   height: 44px;
   width: 200px;
   background-color: #8a94ff;
@@ -334,9 +341,9 @@ nav {
     margin-bottom: 20px;
   }
 
-  .booking-form {
+  /* .booking-form {
     margin-bottom: 10%;
-  }
+  } */
 
   .booking-form::before {
     margin-bottom: 80px;
@@ -370,6 +377,10 @@ nav {
   .seat-view {
     -webkit-box-shadow: inset 0px -10px 2px 10px rgb(255 255 255 / 40%);
     box-shadow: inset 0px -10px 2px 10px rgb(255 255 255 / 40%);
+  }
+
+  #purchased-tickets {
+    height: 10vh;
   }
 
   .btn-buy {
